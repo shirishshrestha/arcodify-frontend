@@ -1,4 +1,4 @@
-# 🛍️ E-Commerce Storefront & Admin Panel (Mock)
+# 🛍️ E-Commerce Storefront & Admin Panel
 
 [![Next.js](https://img.shields.io/badge/Next.js-15-blue)](https://nextjs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.3-blue?logo=tailwind-css)](https://tailwindcss.com/)
@@ -12,7 +12,7 @@
 
 ## 🚀 Overview
 
-This project is a **mock e-commerce platform** built with **Next.js 13**, including:
+This project is a **mock e-commerce platform** built with **Next.js 15**, including:
 
 - **Public storefront:** Product listing, search, filter, pagination, cart & checkout modal.
 - **Admin dashboard:** Mock login/signup, manage products and users.
@@ -30,7 +30,7 @@ All data is handled **client-side** with **mock APIs** and state management.
 - `/product/[id]` — Product details page
 - **Cart + Checkout Modal:** Floating cart button, add to cart, checkout modal
 
-### Admin "Back Office"
+### Admin
 
 - `/login` — Mock login
 - `/signup` — Mock signup
@@ -44,12 +44,14 @@ All data is handled **client-side** with **mock APIs** and state management.
 
 - **Next.js 15** (App Router)
 - **React 19**
+- **Typescript**
 - **Tailwind CSS 4**
 - **Shadcn/UI** for components
 - **TanStack Query** for data fetching & caching
 - **React Hook Form** + **Zod** for forms & validation
 - **Axios** for API requests
 - **LocalStorage / SessionStorage** for cart & auth
+- **Redux Toolkit** for state management
 
 ---
 

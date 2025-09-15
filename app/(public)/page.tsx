@@ -1,6 +1,6 @@
-import { Footer, Header } from "@/components/layout";
 import { Button } from "@/components/ui/button";
 import { FeaturedProducts } from "@/features/products";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -18,12 +18,14 @@ export default function Home() {
                 electronics to fashion, find everything you need in one place.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button
-                  size="lg"
-                  className="bg-primary hover:bg-primary/90 text-primary-foreground"
-                >
-                  Shop Now
-                </Button>
+                <Link href={"/products"}>
+                  <Button
+                    size="lg"
+                    className="bg-primary hover:bg-primary/90 text-primary-foreground"
+                  >
+                    Shop Now
+                  </Button>
+                </Link>
                 <Button
                   variant="outline"
                   size="lg"

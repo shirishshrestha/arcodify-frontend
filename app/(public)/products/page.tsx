@@ -74,7 +74,7 @@ export default function ProductsPage() {
 
           {/* Search and Filters */}
           <div className="flex flex-col md:flex-row gap-4 mb-6">
-            <SearchInput  />
+            <SearchInput />
 
             <div className="flex gap-2">
               <Select
@@ -134,14 +134,15 @@ export default function ProductsPage() {
                 <ProductCard key={product.id} product={product} />
               ))}
             </div>
-
-            <ProductPagination
-              currentPage={page}
-              totalPages={Math.ceil(20 / limit)}
-              onPageChange={(newPage) =>
-                updateSearchParams({ page: newPage.toString() })
-              }
-            />
+            {products.length > limit && (
+              <ProductPagination
+                currentPage={page}
+                totalPages={Math.ceil(20 / limit)}
+                onPageChange={(newPage) =>
+                  updateSearchParams({ page: newPage.toString() })
+                }
+              />
+            )}
           </>
         ) : (
           <div className="text-center py-12">

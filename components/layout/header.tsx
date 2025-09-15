@@ -2,8 +2,8 @@
 
 import React, { useState } from "react";
 import { Button } from "../ui/button";
-import { Menu, Search, ShoppingCart, X } from "lucide-react";
-import { Input } from "../ui/input";
+import { Menu, ShoppingCart, User, X } from "lucide-react";
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -58,6 +58,10 @@ const Header = () => {
                 0
               </span>
             </Button>
+
+            <Link href={"/login"}>
+              <User className="h-5 w-5 stroke-1" />
+            </Link>
 
             {/* Mobile menu button */}
             <Button

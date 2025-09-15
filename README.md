@@ -3,7 +3,7 @@
 [![Next.js](https://img.shields.io/badge/Next.js-13-blue)](https://nextjs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.3-blue?logo=tailwind-css)](https://tailwindcss.com/)
 [![Shadcn/UI](https://img.shields.io/badge/Shadcn--UI-Components-brightgreen)](https://ui.shadcn.com/)
-[![React](https://img.shields.io/badge/React-18-blue?logo=react)](https://reactjs.org/)
+[![React](https://img.shields.io/badge/React-19-blue?logo=react)](https://reactjs.org/)
 [![TanStack Query](https://img.shields.io/badge/TanStack_Query-React-yellow)](https://tanstack.com/query/latest)
 [![React Hook Form](https://img.shields.io/badge/React_Hook_Form-React-red)](https://react-hook-form.com/)
 [![Zod](https://img.shields.io/badge/Zod-Validation-orange)](https://zod.dev/)

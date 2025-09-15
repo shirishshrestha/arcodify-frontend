@@ -1,6 +1,6 @@
 # 🛍️ E-Commerce Storefront & Admin Panel (Mock)
 
-[![Next.js](https://img.shields.io/badge/Next.js-13-blue)](https://nextjs.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-15-blue)](https://nextjs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.3-blue?logo=tailwind-css)](https://tailwindcss.com/)
 [![Shadcn/UI](https://img.shields.io/badge/Shadcn--UI-Components-brightgreen)](https://ui.shadcn.com/)
 [![React](https://img.shields.io/badge/React-19-blue?logo=react)](https://reactjs.org/)
@@ -42,7 +42,7 @@ All data is handled **client-side** with **mock APIs** and state management.
 
 ## 🛠️ Tech Stack
 
-- **Next.js 13** (App Router)
+- **Next.js 15** (App Router)
 - **React 19**
 - **Tailwind CSS 4**
 - **Shadcn/UI** for components

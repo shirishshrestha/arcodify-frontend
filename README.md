@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛍️ E-Commerce Storefront & Admin Panel (Mock)
 
-## Getting Started
+[![Next.js](https://img.shields.io/badge/Next.js-13-blue)](https://nextjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.3-blue?logo=tailwind-css)](https://tailwindcss.com/)
+[![Shadcn/UI](https://img.shields.io/badge/Shadcn--UI-Components-brightgreen)](https://ui.shadcn.com/)
+[![React](https://img.shields.io/badge/React-18-blue?logo=react)](https://reactjs.org/)
+[![TanStack Query](https://img.shields.io/badge/TanStack_Query-React-yellow)](https://tanstack.com/query/latest)
+[![React Hook Form](https://img.shields.io/badge/React_Hook_Form-React-red)](https://react-hook-form.com/)
+[![Zod](https://img.shields.io/badge/Zod-Validation-orange)](https://zod.dev/)
 
-First, run the development server:
+---
+
+## 🚀 Overview
+
+This project is a **mock e-commerce platform** built with **Next.js 13**, including:
+
+- **Public storefront:** Product listing, search, filter, pagination, cart & checkout modal.
+- **Admin dashboard:** Mock login/signup, manage products and users.
+
+All data is handled **client-side** with **mock APIs** and state management.
+
+---
+
+## 📝 Features
+
+### Public "User Side"
+
+- `/` — Storefront grid
+- `/products` — Products list with search, filter, pagination
+- `/product/[id]` — Product details page
+- **Cart + Checkout Modal:** Floating cart button, add to cart, checkout modal
+
+### Admin "Back Office"
+
+- `/login` — Mock login
+- `/signup` — Mock signup
+- `/dashboard/products` — Admin product management
+- `/dashboard/users` — Admin user management
+- **Auth:** Token stored in `sessionStorage`, forms validated with `react-hook-form` + `zod`
+
+---
+
+## 🛠️ Tech Stack
+
+- **Next.js 13** (App Router)
+- **React 19**
+- **Tailwind CSS 4**
+- **Shadcn/UI** for components
+- **TanStack Query** for data fetching & caching
+- **React Hook Form** + **Zod** for forms & validation
+- **Axios** for API requests
+- **LocalStorage / SessionStorage** for cart & auth
+
+---
+
+## 🏗️ Architecture & Design Choices
+
+### 1. State Management
+
+- **Cart:** React state / Context, optional localStorage for persistence
+- **Admin:** Mock state
+
+### 2. Data Fetching
+
+- **TanStack Query** for API calls
+- **Default API params**: `limit`, `sort`, `category`
+- **Manual handling**: `page` & `search` client-side due to Fake Store API limitations
+
+### 3. Forms & Validation
+
+- **React Hook Form + Zod** for type-safe login/signup forms
+
+### 4. UI / Styling
+
+- **Tailwind CSS** for rapid, responsive styling
+- **Shadcn/UI** for consistent, prebuilt components
+
+---
+
+## ⚡ Setup
+
+1. Clone the repository:
+
+```bash
+git clone <repo-url>
+cd <repo-name>
+
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4.Open in browser:
+http://localhost:3000

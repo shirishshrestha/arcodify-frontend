@@ -1,9 +1,6 @@
 "use client";
 
-import { useState } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import {
   Select,
   SelectContent,
@@ -11,7 +8,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Search } from "lucide-react";
 import { ProductCard, ProductPagination } from "@/features/products";
 import { useGetAllProducts, useGetCategories } from "@/features/products/hooks";
 import { SearchInput } from "@/features";
